@@ -45,7 +45,6 @@ canvas {
   }
 
   .controls div {
-    flex-basis: 33%;
     flex-grow: 1;
   }
 
