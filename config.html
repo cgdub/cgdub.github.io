@@ -6,7 +6,7 @@
 <!-- 2018-09-22 Sat 12:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>Org Configuration</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Chris Williams" />
 <style type="text/css">
@@ -261,11 +261,104 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div id="content">
-<ul class="org-ul">
-<li><a href="blog.html">Building a Blog in Emacs</a></li>
-<li><a href="demos.html">Demos</a></li>
-<li><a href="config.html">Org Configuration</a></li>
-</ul>
+<h1 class="title">Org Configuration</h1>
+<p>
+This is the code that generates this site.
+</p>
+
+<div id="outline-container-org1be3574" class="outline-2">
+<h2 id="org1be3574">Style</h2>
+<div class="outline-text-2" id="text-org1be3574">
+<div class="org-src-container">
+<pre class="src src-css" id="org08df59d"><span style="color: #0000ff; font-weight: bold;">body </span>{
+  <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
+  <span style="color: #00AA00;">font-family</span>: Arial, Helvetica, sans-serif;
+  <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">18px</span>;
+  <span style="color: #00AA00;">line-height</span>: <span style="color: #D0372D;">1.6</span>;
+  <span style="color: #00AA00;">margin</span>: <span style="color: #D0372D;">40px</span> auto;
+  <span style="color: #00AA00;">max-width</span>: <span style="color: #D0372D;">650px</span>;
+  <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">0</span> <span style="color: #D0372D;">10px</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb2e3265" class="outline-2">
+<h2 id="orgb2e3265">Header</h2>
+<div class="outline-text-2" id="text-orgb2e3265">
+<div class="org-src-container">
+<pre class="src src-html" id="org94e3814">&lt;<span style="color: #006699;">link</span> <span style="color: #BA36A5;">rel</span>='stylesheet'
+      <span style="color: #BA36A5;">href</span>='https://unpkg.com/purecss@1.0.0/build/pure-min.css'&gt;
+&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
+  &lt;&lt;<span style="color: #006699;">style</span>&gt;&gt;
+&lt;/<span style="color: #006699;">style</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1063e2f" class="outline-2">
+<h2 id="org1063e2f">Navbar</h2>
+<div class="outline-text-2" id="text-org1063e2f">
+<div class="org-src-container">
+<pre class="src src-html" id="org28781a4">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
+  &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='pure-menu pure-menu-horizontal'&gt;
+    &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-heading'
+       <span style="color: #BA36A5;">href</span>='index.html'&gt;Code Commentary&lt;/<span style="color: #006699;">a</span>&gt;
+    &lt;<span style="color: #006699;">ul</span> <span style="color: #BA36A5;">class</span>='pure-menu-list'&gt;
+      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='pure-menu-item'&gt;
+        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-link' <span style="color: #BA36A5;">href</span>='index.html'&gt;Blog&lt;/<span style="color: #006699;">a</span>&gt;
+      &lt;/<span style="color: #006699;">li</span>&gt;
+      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='pure-menu-item'&gt;
+        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-link'
+           <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
+      &lt;/<span style="color: #006699;">li</span>&gt;
+    &lt;/<span style="color: #006699;">div</span>&gt;
+  &lt;/<span style="color: #006699;">nav</span>&gt;
+&lt;/<span style="color: #006699;">div</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org18f4efe" class="outline-2">
+<h2 id="org18f4efe">Publishing configuration</h2>
+<div class="outline-text-2" id="text-org18f4efe">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">setq</span> org-publish-project-alist
+      '((<span style="color: #008000;">"blog"</span>
+         <span style="color: #006FE0;">:auto-sitemap</span> t
+         <span style="color: #006FE0;">:base-directory</span> <span style="color: #008000;">"~/blog/"</span>
+         <span style="color: #006FE0;">:publishing-directory</span> <span style="color: #008000;">"~/chilliams.github.io"</span>
+         <span style="color: #006FE0;">:publishing-function</span> org-html-publish-to-html
+         <span style="color: #006FE0;">:recursive</span> t
+         <span style="color: #006FE0;">:section-numbers</span> nil
+         <span style="color: #006FE0;">:sitemap-filename</span> <span style="color: #008000;">"index.org"</span>
+         <span style="color: #006FE0;">:sitemap-title</span> <span style="color: #008000;">""</span>
+         <span style="color: #006FE0;">:with-toc</span> nil
+         <span style="color: #006FE0;">:html-head</span> <span style="color: #008000;">"</span>
+<span style="color: #008000;">&lt;&lt;header&gt;&gt;</span>
+<span style="color: #008000;">"</span>
+         <span style="color: #006FE0;">:html-postamble</span> nil
+         <span style="color: #006FE0;">:html-preamble-format</span> ((<span style="color: #008000;">"en"</span> <span style="color: #008000;">"</span>
+<span style="color: #008000;">&lt;&lt;navbar&gt;&gt;</span>
+<span style="color: #008000;">"</span>))
+         <span style="color: #006FE0;">:html-validation-link</span> <span style="color: #008000;">""</span>)))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9fb5d67" class="outline-2">
+<h2 id="org9fb5d67">Publish</h2>
+<div class="outline-text-2" id="text-org9fb5d67">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(org-publish <span style="color: #008000;">"blog"</span> t)
+</pre>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
