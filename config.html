@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-09-22 Sat 13:07 -->
+<!-- 2018-09-22 Sat 15:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Org Configuration</title>
+<title>Site Configuration</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Chris Williams" />
 <style type="text/css">
@@ -181,8 +181,6 @@
   /*]]>*/-->
 </style>
 
-<link rel='stylesheet'
-      href='https://unpkg.com/purecss@1.0.0/build/pure-min.css'>
 <style type='text/css'>
   body {
     color: #444;
@@ -192,6 +190,20 @@
     margin: 40px auto;
     max-width: 650px;
     padding: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .menu-heading {
+    text-transform: uppercase;
+  }
+  
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 </style>
 <script type="text/javascript">
@@ -245,36 +257,33 @@ for the JavaScript code in this tag.
 <div id="preamble" class="status">
 
 <div class='header'>
-  <div class='pure-menu pure-menu-horizontal'>
-    <a class='pure-menu-heading'
+  <div class='menu'>
+    <a class='menu-heading'
        href='index.html'>Code Commentary</a>
-    <ul class='pure-menu-list'>
-      <li class='pure-menu-item'>
-        <a class='pure-menu-link' href='index.html'>Blog</a>
-      </li>
-      <li class='pure-menu-item'>
-        <a class='pure-menu-link'
+    <ul class='menu-list'>
+      <li class='menu-item'>
+        <a class='menu-link'
            href='demos.html'>Demos</a>
       </li>
-      <li class='pure-menu-item'>
-        <a class='pure-menu-link'
-           href='aboutme.html'>About Me</a>
+      <li class='menu-item'>
+        <a class='menu-link'
+           href='about.html'>About Me</a>
       </li>
     </div>
   </nav>
 </div>
 </div>
 <div id="content">
-<h1 class="title">Org Configuration</h1>
+<h1 class="title">Site Configuration</h1>
 <p>
 This is the code that generates this site.
 </p>
 
-<div id="outline-container-org1be3574" class="outline-2">
-<h2 id="org1be3574">Style</h2>
-<div class="outline-text-2" id="text-org1be3574">
+<div id="outline-container-org072f807" class="outline-2">
+<h2 id="org072f807">Style</h2>
+<div class="outline-text-2" id="text-org072f807">
 <div class="org-src-container">
-<pre class="src src-css" id="org08df59d"><span style="color: #0000ff; font-weight: bold;">body </span>{
+<pre class="src src-css" id="orgfbdcee6"><span style="color: #0000ff; font-weight: bold;">body </span>{
   <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
   <span style="color: #00AA00;">font-family</span>: Arial, Helvetica, sans-serif;
   <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">18px</span>;
@@ -283,18 +292,30 @@ This is the code that generates this site.
   <span style="color: #00AA00;">max-width</span>: <span style="color: #D0372D;">650px</span>;
   <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">0</span> <span style="color: #D0372D;">10px</span>;
 }
+
+<span style="color: #0000ff; font-weight: bold;">a </span>{
+  <span style="color: #00AA00;">text-decoration</span>: none;
+}
+
+<span style="color: #0000ff; font-weight: bold;">.menu-heading </span>{
+  <span style="color: #00AA00;">text-transform</span>: uppercase;
+}
+
+<span style="color: #0000ff; font-weight: bold;">.menu-list </span>{
+  <span style="color: #00AA00;">list-style</span>: none;
+  <span style="color: #00AA00;">margin</span>: <span style="color: #D0372D;">0</span>;
+  <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">0</span>;
+}
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb2e3265" class="outline-2">
-<h2 id="orgb2e3265">Header</h2>
-<div class="outline-text-2" id="text-orgb2e3265">
+<div id="outline-container-org7da5378" class="outline-2">
+<h2 id="org7da5378">Header</h2>
+<div class="outline-text-2" id="text-org7da5378">
 <div class="org-src-container">
-<pre class="src src-html" id="org94e3814">&lt;<span style="color: #006699;">link</span> <span style="color: #BA36A5;">rel</span>='stylesheet'
-      <span style="color: #BA36A5;">href</span>='https://unpkg.com/purecss@1.0.0/build/pure-min.css'&gt;
-&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
+<pre class="src src-html" id="orgea9f09c">&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
   &lt;&lt;<span style="color: #006699;">style</span>&gt;&gt;
 &lt;/<span style="color: #006699;">style</span>&gt;
 </pre>
@@ -302,25 +323,22 @@ This is the code that generates this site.
 </div>
 </div>
 
-<div id="outline-container-org1063e2f" class="outline-2">
-<h2 id="org1063e2f">Navbar</h2>
-<div class="outline-text-2" id="text-org1063e2f">
+<div id="outline-container-orgc58091c" class="outline-2">
+<h2 id="orgc58091c">Navbar</h2>
+<div class="outline-text-2" id="text-orgc58091c">
 <div class="org-src-container">
-<pre class="src src-html" id="org28781a4">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
-  &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='pure-menu pure-menu-horizontal'&gt;
-    &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-heading'
+<pre class="src src-html" id="orgd54bc8a">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
+  &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='menu'&gt;
+    &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-heading'
        <span style="color: #BA36A5;">href</span>='index.html'&gt;Code Commentary&lt;/<span style="color: #006699;">a</span>&gt;
-    &lt;<span style="color: #006699;">ul</span> <span style="color: #BA36A5;">class</span>='pure-menu-list'&gt;
-      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='pure-menu-item'&gt;
-        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-link' <span style="color: #BA36A5;">href</span>='index.html'&gt;Blog&lt;/<span style="color: #006699;">a</span>&gt;
-      &lt;/<span style="color: #006699;">li</span>&gt;
-      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='pure-menu-item'&gt;
-        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-link'
+    &lt;<span style="color: #006699;">ul</span> <span style="color: #BA36A5;">class</span>='menu-list'&gt;
+      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='menu-item'&gt;
+        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link'
            <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
       &lt;/<span style="color: #006699;">li</span>&gt;
-      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='pure-menu-item'&gt;
-        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='pure-menu-link'
-           <span style="color: #BA36A5;">href</span>='aboutme.html'&gt;About Me&lt;/<span style="color: #006699;">a</span>&gt;
+      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='menu-item'&gt;
+        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link'
+           <span style="color: #BA36A5;">href</span>='about.html'&gt;About Me&lt;/<span style="color: #006699;">a</span>&gt;
       &lt;/<span style="color: #006699;">li</span>&gt;
     &lt;/<span style="color: #006699;">div</span>&gt;
   &lt;/<span style="color: #006699;">nav</span>&gt;
@@ -330,9 +348,9 @@ This is the code that generates this site.
 </div>
 </div>
 
-<div id="outline-container-org18f4efe" class="outline-2">
-<h2 id="org18f4efe">Publishing configuration</h2>
-<div class="outline-text-2" id="text-org18f4efe">
+<div id="outline-container-orgc1043ec" class="outline-2">
+<h2 id="orgc1043ec">Publishing configuration</h2>
+<div class="outline-text-2" id="text-orgc1043ec">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #0000FF;">setq</span> org-publish-project-alist
       '((<span style="color: #008000;">"blog"</span>
@@ -343,7 +361,8 @@ This is the code that generates this site.
          <span style="color: #006FE0;">:recursive</span> t
          <span style="color: #006FE0;">:section-numbers</span> nil
          <span style="color: #006FE0;">:sitemap-filename</span> <span style="color: #008000;">"index.org"</span>
-         <span style="color: #006FE0;">:sitemap-title</span> <span style="color: #008000;">""</span>
+         <span style="color: #006FE0;">:sitemap-sort-files</span> anti-chronologically
+         <span style="color: #006FE0;">:sitemap-title</span> <span style="color: #008000;">"Posts"</span>
          <span style="color: #006FE0;">:with-toc</span> nil
          <span style="color: #006FE0;">:html-head</span> <span style="color: #008000;">"</span>
 <span style="color: #008000;">&lt;&lt;header&gt;&gt;</span>
@@ -358,11 +377,14 @@ This is the code that generates this site.
 </div>
 </div>
 
-<div id="outline-container-org9fb5d67" class="outline-2">
-<h2 id="org9fb5d67">Publish</h2>
-<div class="outline-text-2" id="text-org9fb5d67">
+<div id="outline-container-org47b0e20" class="outline-2">
+<h2 id="org47b0e20">Publish</h2>
+<div class="outline-text-2" id="text-org47b0e20">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(org-publish <span style="color: #008000;">"blog"</span> t)
+<pre class="src src-emacs-lisp">(<span style="color: #0000FF;">require</span> '<span style="color: #D0372D;">ox-publish</span>)
+(org-publish-remove-all-timestamps)
+(org-publish <span style="color: #008000;">"blog"</span> t)
+(org-publish <span style="color: #008000;">"blog"</span> t)
 </pre>
 </div>
 </div>
