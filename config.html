@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-09-22 Sat 15:05 -->
+<!-- 2018-09-22 Sat 21:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Site Configuration</title>
@@ -187,23 +187,46 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    margin: 40px auto;
+    margin: auto;
     max-width: 650px;
-    padding: 0 10px;
+    padding: 20px;
   }
   
   a {
+    border-bottom: 1px solid;
+    color: #44f;
     text-decoration: none;
   }
   
+  a:hover {
+    background: #eee;
+  }
+  
+  pre.src {
+    overflow: auto;
+  }
+  
+  .menu {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .menu-heading {
+    border: none;
+    color: #444;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
   
-  .menu-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .menu-link {
+    border: none;
+    color: #444;
+    margin-right: 1em;
+  }
+  
+  .title {
+    text-align: unset;
   }
 </style>
 <script type="text/javascript">
@@ -260,62 +283,79 @@ for the JavaScript code in this tag.
   <div class='menu'>
     <a class='menu-heading'
        href='index.html'>Code Commentary</a>
-    <ul class='menu-list'>
-      <li class='menu-item'>
-        <a class='menu-link'
-           href='demos.html'>Demos</a>
-      </li>
-      <li class='menu-item'>
-        <a class='menu-link'
-           href='about.html'>About Me</a>
-      </li>
+    <div class='menu-links'>
+      <a class='menu-link' href='demos.html'>Demos</a>
+      <a class='menu-link' href='about.html'>About Me</a>
     </div>
-  </nav>
+  </div>
 </div>
 </div>
 <div id="content">
 <h1 class="title">Site Configuration</h1>
 <p>
-This is the code that generates this site.
+This is the code that generates my site. The full source for my website is available <a href="https://github.com/chilliams/blog">on GitHub</a>.
 </p>
 
-<div id="outline-container-org072f807" class="outline-2">
-<h2 id="org072f807">Style</h2>
-<div class="outline-text-2" id="text-org072f807">
+<div id="outline-container-org7525bd4" class="outline-2">
+<h2 id="org7525bd4">Style</h2>
+<div class="outline-text-2" id="text-org7525bd4">
 <div class="org-src-container">
-<pre class="src src-css" id="orgfbdcee6"><span style="color: #0000ff; font-weight: bold;">body </span>{
+<pre class="src src-css" id="org0dcf4af"><span style="color: #0000ff; font-weight: bold;">body </span>{
   <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
   <span style="color: #00AA00;">font-family</span>: Arial, Helvetica, sans-serif;
   <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">18px</span>;
   <span style="color: #00AA00;">line-height</span>: <span style="color: #D0372D;">1.6</span>;
-  <span style="color: #00AA00;">margin</span>: <span style="color: #D0372D;">40px</span> auto;
+  <span style="color: #00AA00;">margin</span>: auto;
   <span style="color: #00AA00;">max-width</span>: <span style="color: #D0372D;">650px</span>;
-  <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">0</span> <span style="color: #D0372D;">10px</span>;
+  <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">20px</span>;
 }
 
 <span style="color: #0000ff; font-weight: bold;">a </span>{
+  <span style="color: #00AA00;">border-bottom</span>: <span style="color: #D0372D;">1px</span> solid;
+  <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #44f;">#44f</span>;
   <span style="color: #00AA00;">text-decoration</span>: none;
 }
 
+<span style="color: #0000ff; font-weight: bold;">a:hover </span>{
+  <span style="color: #00AA00;">background</span>: <span style="color: #000000; background-color: #eee;">#eee</span>;
+}
+
+<span style="color: #0000ff; font-weight: bold;">pre.src </span>{
+  <span style="color: #00AA00;">overflow</span>: auto;
+}
+
+<span style="color: #0000ff; font-weight: bold;">.menu </span>{
+  <span style="color: #00AA00;">align-items</span>: baseline;
+  <span style="color: #00AA00;">display</span>: flex;
+  <span style="color: #00AA00;">flex-direction</span>: column;
+}
+
 <span style="color: #0000ff; font-weight: bold;">.menu-heading </span>{
+  <span style="color: #00AA00;">border</span>: none;
+  <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
+  <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">1.5em</span>;
   <span style="color: #00AA00;">text-transform</span>: uppercase;
 }
 
-<span style="color: #0000ff; font-weight: bold;">.menu-list </span>{
-  <span style="color: #00AA00;">list-style</span>: none;
-  <span style="color: #00AA00;">margin</span>: <span style="color: #D0372D;">0</span>;
-  <span style="color: #00AA00;">padding</span>: <span style="color: #D0372D;">0</span>;
+<span style="color: #0000ff; font-weight: bold;">.menu-link </span>{
+  <span style="color: #00AA00;">border</span>: none;
+  <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
+  <span style="color: #00AA00;">margin-right</span>: <span style="color: #D0372D;">1em</span>;
+}
+
+<span style="color: #0000ff; font-weight: bold;">.title </span>{
+  <span style="color: #00AA00;">text-align</span>: unset;
 }
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org7da5378" class="outline-2">
-<h2 id="org7da5378">Header</h2>
-<div class="outline-text-2" id="text-org7da5378">
+<div id="outline-container-org2917bc9" class="outline-2">
+<h2 id="org2917bc9">Header</h2>
+<div class="outline-text-2" id="text-org2917bc9">
 <div class="org-src-container">
-<pre class="src src-html" id="orgea9f09c">&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
+<pre class="src src-html" id="orgb96f47a">&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
   &lt;&lt;<span style="color: #006699;">style</span>&gt;&gt;
 &lt;/<span style="color: #006699;">style</span>&gt;
 </pre>
@@ -323,46 +363,40 @@ This is the code that generates this site.
 </div>
 </div>
 
-<div id="outline-container-orgc58091c" class="outline-2">
-<h2 id="orgc58091c">Navbar</h2>
-<div class="outline-text-2" id="text-orgc58091c">
+<div id="outline-container-org604ed62" class="outline-2">
+<h2 id="org604ed62">Navbar</h2>
+<div class="outline-text-2" id="text-org604ed62">
 <div class="org-src-container">
-<pre class="src src-html" id="orgd54bc8a">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
+<pre class="src src-html" id="org35e40a8">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
   &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='menu'&gt;
     &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-heading'
        <span style="color: #BA36A5;">href</span>='index.html'&gt;Code Commentary&lt;/<span style="color: #006699;">a</span>&gt;
-    &lt;<span style="color: #006699;">ul</span> <span style="color: #BA36A5;">class</span>='menu-list'&gt;
-      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='menu-item'&gt;
-        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link'
-           <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
-      &lt;/<span style="color: #006699;">li</span>&gt;
-      &lt;<span style="color: #006699;">li</span> <span style="color: #BA36A5;">class</span>='menu-item'&gt;
-        &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link'
-           <span style="color: #BA36A5;">href</span>='about.html'&gt;About Me&lt;/<span style="color: #006699;">a</span>&gt;
-      &lt;/<span style="color: #006699;">li</span>&gt;
+    &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='menu-links'&gt;
+      &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link' <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
+      &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link' <span style="color: #BA36A5;">href</span>='about.html'&gt;About Me&lt;/<span style="color: #006699;">a</span>&gt;
     &lt;/<span style="color: #006699;">div</span>&gt;
-  &lt;/<span style="color: #006699;">nav</span>&gt;
+  &lt;/<span style="color: #006699;">div</span>&gt;
 &lt;/<span style="color: #006699;">div</span>&gt;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc1043ec" class="outline-2">
-<h2 id="orgc1043ec">Publishing configuration</h2>
-<div class="outline-text-2" id="text-orgc1043ec">
+<div id="outline-container-org96ed94f" class="outline-2">
+<h2 id="org96ed94f">Publishing configuration</h2>
+<div class="outline-text-2" id="text-org96ed94f">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #0000FF;">setq</span> org-publish-project-alist
       '((<span style="color: #008000;">"blog"</span>
          <span style="color: #006FE0;">:auto-sitemap</span> t
          <span style="color: #006FE0;">:base-directory</span> <span style="color: #008000;">"~/blog/"</span>
-         <span style="color: #006FE0;">:publishing-directory</span> <span style="color: #008000;">"~/chilliams.github.io"</span>
+         <span style="color: #006FE0;">:publishing-directory</span> <span style="color: #008000;">"~/chilliams.github.io/"</span>
          <span style="color: #006FE0;">:publishing-function</span> org-html-publish-to-html
          <span style="color: #006FE0;">:recursive</span> t
          <span style="color: #006FE0;">:section-numbers</span> nil
          <span style="color: #006FE0;">:sitemap-filename</span> <span style="color: #008000;">"index.org"</span>
          <span style="color: #006FE0;">:sitemap-sort-files</span> anti-chronologically
-         <span style="color: #006FE0;">:sitemap-title</span> <span style="color: #008000;">"Posts"</span>
+         <span style="color: #006FE0;">:sitemap-title</span> <span style="color: #008000;">"Notes"</span>
          <span style="color: #006FE0;">:with-toc</span> nil
          <span style="color: #006FE0;">:html-head</span> <span style="color: #008000;">"</span>
 <span style="color: #008000;">&lt;&lt;header&gt;&gt;</span>
@@ -377,9 +411,9 @@ This is the code that generates this site.
 </div>
 </div>
 
-<div id="outline-container-org47b0e20" class="outline-2">
-<h2 id="org47b0e20">Publish</h2>
-<div class="outline-text-2" id="text-org47b0e20">
+<div id="outline-container-orgd3b4153" class="outline-2">
+<h2 id="orgd3b4153">Publish</h2>
+<div class="outline-text-2" id="text-orgd3b4153">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #0000FF;">require</span> '<span style="color: #D0372D;">ox-publish</span>)
 (org-publish-remove-all-timestamps)

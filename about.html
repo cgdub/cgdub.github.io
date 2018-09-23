@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-09-22 Sat 15:05 -->
+<!-- 2018-09-22 Sat 21:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About Me</title>
@@ -187,23 +187,46 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    margin: 40px auto;
+    margin: auto;
     max-width: 650px;
-    padding: 0 10px;
+    padding: 20px;
   }
   
   a {
+    border-bottom: 1px solid;
+    color: #44f;
     text-decoration: none;
   }
   
+  a:hover {
+    background: #eee;
+  }
+  
+  pre.src {
+    overflow: auto;
+  }
+  
+  .menu {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .menu-heading {
+    border: none;
+    color: #444;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
   
-  .menu-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .menu-link {
+    border: none;
+    color: #444;
+    margin-right: 1em;
+  }
+  
+  .title {
+    text-align: unset;
   }
 </style>
 <script type="text/javascript">
@@ -260,17 +283,11 @@ for the JavaScript code in this tag.
   <div class='menu'>
     <a class='menu-heading'
        href='index.html'>Code Commentary</a>
-    <ul class='menu-list'>
-      <li class='menu-item'>
-        <a class='menu-link'
-           href='demos.html'>Demos</a>
-      </li>
-      <li class='menu-item'>
-        <a class='menu-link'
-           href='about.html'>About Me</a>
-      </li>
+    <div class='menu-links'>
+      <a class='menu-link' href='demos.html'>Demos</a>
+      <a class='menu-link' href='about.html'>About Me</a>
     </div>
-  </nav>
+  </div>
 </div>
 </div>
 <div id="content">
@@ -279,9 +296,18 @@ for the JavaScript code in this tag.
 I am a software developer with an <a href="https://martinfowler.com/bliki/EnablingAttitude.html">enabling attitude</a> who lives in New York City.
 </p>
 
-<div id="outline-container-org434be3b" class="outline-2">
-<h2 id="org434be3b">Software I Like</h2>
-<div class="outline-text-2" id="text-org434be3b">
+<div id="outline-container-org4745356" class="outline-2">
+<h2 id="org4745356">Internet Presence</h2>
+<div class="outline-text-2" id="text-org4745356">
+<ul class="org-ul">
+<li><a href="http://github.com/chilliams">Github</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org82d57f6" class="outline-2">
+<h2 id="org82d57f6">Software I Like</h2>
+<div class="outline-text-2" id="text-org82d57f6">
 <ul class="org-ul">
 <li><a href="https://www.gnu.org/software/emacs/">Emacs</a></li>
 <li><a href="https://reactjs.org/">React</a></li>
