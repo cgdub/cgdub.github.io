@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-10-13 Sat 14:00 -->
+<!-- 2019-01-05 Sat 14:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Site Configuration</title>
@@ -228,6 +228,10 @@
   .title {
     text-align: unset;
   }
+  
+  .date {
+    font-size: 70%;
+  }
 </style>
 <script type="text/javascript">
 /*
@@ -284,8 +288,8 @@ for the JavaScript code in this tag.
     <a class='menu-heading'
        href='index.html'>References and Recursion</a>
     <div class='menu-links'>
-      <a class='menu-link' href='demos.html'>Demos</a>
       <a class='menu-link' href='about.html'>About Me</a>
+      <a class='menu-link' href='demos.html'>Demos</a>
     </div>
   </div>
 </div>
@@ -296,11 +300,11 @@ for the JavaScript code in this tag.
 This is the code that generates my site. The full source for my website is available <a href="https://github.com/chilliams/blog">on GitHub</a>.
 </p>
 
-<div id="outline-container-org2b731a0" class="outline-2">
-<h2 id="org2b731a0">Style</h2>
-<div class="outline-text-2" id="text-org2b731a0">
+<div id="outline-container-org46213e9" class="outline-2">
+<h2 id="org46213e9">Style</h2>
+<div class="outline-text-2" id="text-org46213e9">
 <div class="org-src-container">
-<pre class="src src-css" id="org3e8fceb"><span style="color: #0000ff; font-weight: bold;">body </span>{
+<pre class="src src-css" id="org0c609fb"><span style="color: #0000ff; font-weight: bold;">body </span>{
   <span style="color: #00AA00;">color</span>: <span style="color: #ffffff; background-color: #444;">#444</span>;
   <span style="color: #00AA00;">font-family</span>: Arial, Helvetica, sans-serif;
   <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">18px</span>;
@@ -346,16 +350,20 @@ This is the code that generates my site. The full source for my website is avail
 <span style="color: #0000ff; font-weight: bold;">.title </span>{
   <span style="color: #00AA00;">text-align</span>: unset;
 }
+
+<span style="color: #0000ff; font-weight: bold;">.date </span>{
+  <span style="color: #00AA00;">font-size</span>: <span style="color: #D0372D;">70</span>%;
+}
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgab190f0" class="outline-2">
-<h2 id="orgab190f0">Header</h2>
-<div class="outline-text-2" id="text-orgab190f0">
+<div id="outline-container-orgff622f7" class="outline-2">
+<h2 id="orgff622f7">Header</h2>
+<div class="outline-text-2" id="text-orgff622f7">
 <div class="org-src-container">
-<pre class="src src-html" id="org1e8baf5">&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
+<pre class="src src-html" id="org27486c8">&lt;<span style="color: #006699;">style</span> <span style="color: #BA36A5;">type</span>='text/css'&gt;
   &lt;&lt;<span style="color: #006699;">style</span>&gt;&gt;
 &lt;/<span style="color: #006699;">style</span>&gt;
 </pre>
@@ -363,17 +371,17 @@ This is the code that generates my site. The full source for my website is avail
 </div>
 </div>
 
-<div id="outline-container-org00bbb0b" class="outline-2">
-<h2 id="org00bbb0b">Navbar</h2>
-<div class="outline-text-2" id="text-org00bbb0b">
+<div id="outline-container-org01b98bd" class="outline-2">
+<h2 id="org01b98bd">Navbar</h2>
+<div class="outline-text-2" id="text-org01b98bd">
 <div class="org-src-container">
-<pre class="src src-html" id="orgd581c1e">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
+<pre class="src src-html" id="org9cbb0f3">&lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='header'&gt;
   &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='menu'&gt;
     &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-heading'
        <span style="color: #BA36A5;">href</span>='index.html'&gt;References and Recursion&lt;/<span style="color: #006699;">a</span>&gt;
     &lt;<span style="color: #006699;">div</span> <span style="color: #BA36A5;">class</span>='menu-links'&gt;
-      &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link' <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
       &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link' <span style="color: #BA36A5;">href</span>='about.html'&gt;About Me&lt;/<span style="color: #006699;">a</span>&gt;
+      &lt;<span style="color: #006699;">a</span> <span style="color: #BA36A5;">class</span>='menu-link' <span style="color: #BA36A5;">href</span>='demos.html'&gt;Demos&lt;/<span style="color: #006699;">a</span>&gt;
     &lt;/<span style="color: #006699;">div</span>&gt;
   &lt;/<span style="color: #006699;">div</span>&gt;
 &lt;/<span style="color: #006699;">div</span>&gt;
@@ -382,9 +390,9 @@ This is the code that generates my site. The full source for my website is avail
 </div>
 </div>
 
-<div id="outline-container-orgadcb010" class="outline-2">
-<h2 id="orgadcb010">Publishing configuration</h2>
-<div class="outline-text-2" id="text-orgadcb010">
+<div id="outline-container-orga07cd9e" class="outline-2">
+<h2 id="orga07cd9e">Publishing configuration</h2>
+<div class="outline-text-2" id="text-orga07cd9e">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #0000FF;">setq</span> org-publish-project-alist
       '((<span style="color: #008000;">"blog"</span>
@@ -401,19 +409,19 @@ This is the code that generates my site. The full source for my website is avail
          <span style="color: #006FE0;">:html-head</span> <span style="color: #008000;">"</span>
 <span style="color: #008000;">&lt;&lt;header&gt;&gt;</span>
 <span style="color: #008000;">"</span>
-         <span style="color: #006FE0;">:html-postamble</span> nil
          <span style="color: #006FE0;">:html-preamble-format</span> ((<span style="color: #008000;">"en"</span> <span style="color: #008000;">"</span>
 <span style="color: #008000;">&lt;&lt;navbar&gt;&gt;</span>
 <span style="color: #008000;">"</span>))
+         <span style="color: #006FE0;">:html-postamble</span> <span style="color: #008000;">"&lt;p class=\"date\"&gt;%d&lt;/p&gt;"</span>
          <span style="color: #006FE0;">:html-validation-link</span> <span style="color: #008000;">""</span>)))
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8ddeecd" class="outline-2">
-<h2 id="org8ddeecd">Publish</h2>
-<div class="outline-text-2" id="text-org8ddeecd">
+<div id="outline-container-org8d5b05f" class="outline-2">
+<h2 id="org8d5b05f">Publish</h2>
+<div class="outline-text-2" id="text-org8d5b05f">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span style="color: #0000FF;">require</span> '<span style="color: #D0372D;">ox-publish</span>)
 (org-publish-remove-all-timestamps)
@@ -423,6 +431,9 @@ This is the code that generates my site. The full source for my website is avail
 </div>
 </div>
 </div>
+</div>
+<div id="postamble" class="status">
+<p class="date">2018-09-22 Sat 10:00</p>
 </div>
 </body>
 </html>

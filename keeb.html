@@ -6,7 +6,7 @@
 <!-- 2019-01-05 Sat 14:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Demos</title>
+<title>Programming Your Keyboard</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Chris Williams" />
 <style type="text/css">
@@ -295,36 +295,33 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div id="content">
-<h1 class="title">Demos</h1>
-
-<div id="outline-container-orgeae1b32" class="outline-2">
-<h2 id="orgeae1b32">WebGL Voxel Engine Rewrite</h2>
-<div class="outline-text-2" id="text-orgeae1b32">
+<h1 class="title">Programming Your Keyboard</h1>
 <p>
-A browser-based voxel engine that uses <a href="https://github.com/kripken/ammo.js/">ammo.js</a>
+If you work with enough programmers, eventually you'll work with a fan of mechanical keyboards.
 </p>
-<ul class="org-ul">
-<li><a href="blockland.html">Demo</a></li>
-<li><a href="https://github.com/chilliams/blockland">Source</a></li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-org604124b" class="outline-2">
-<h2 id="org604124b">WebGL Voxel Engine</h2>
-<div class="outline-text-2" id="text-org604124b">
 <p>
-A browser-based voxel engine made with ClojureScript and WebGL
+My first mechanical was the <a href="https://deskthority.net/wiki/KBC_Poker_II">Poker II</a>. At the time, I used Vim bindings for programming (in both IDEA and Emacs) and the Poker II is a great keyboard for Vim fans. It features a 60% layout, the backtick key is mapped to escape, and it's programmable. You can reprogram many of the keys and key combinations as well as program simple macros into the keyboard. It's a great keyboard, but if you can read and write C code, I wouldn't recommend because it's not programmable <i>enough</i>.
 </p>
-<ul class="org-ul">
-<li><a href="voxelminer.html">Demo</a></li>
-<li><a href="https://github.com/chilliams/voxelminer">Source</a></li>
-</ul>
-</div>
-</div>
+
+<p>
+If you've used MacOS, you've probably noticed that all the keybindings that would use the Control key instead use the Command key. I use MacOS at work and a combination of Windows and Linux at home. This switching throws off your muscle memory if you don't think before hitting a key combination. Luckily there's a simple solution: move the Control key on Windows and Linux to where the Command key is on MacOS.
+</p>
+
+<p>
+This can be done on Linux with <code>setxkbmap -option altwin:ctrl_alt_win</code> and on Windows with <a href="https://github.com/randyrants/sharpkeys">SharpKeys</a>. In addition to moving the Control key, the Windows key should be used for Alt since Alt is now Control and Control can now be used for Windows. You can now use your thumbs for both Control and Alt not worry about squeezing your pinky onto Control since you never use the Windows key. All the usual keyboard shortcuts use the same hand movements with the only notable exception being Alt-Tab.
+</p>
+
+<p>
+What does any of that have to do with programmable keyboards? Well, now that Control is super easy and comfortable to press, the standard Emacs bindings seem much more appealing. I switched to Emacs bindings full-time, but the Poker II does not let your remap the Fn and Pn keys. Since Fn takes up the right Windows key, I don't have something to use for right Alt. So I switched to a tenkeyless keyboard, but was really missing the 60% layout.
+</p>
+
+<p>
+Enter the KBParadise V60 Type R. The V60 Type R is a fully programmable keyboard. <b>Fully programmable</b> means that you have full access to the firmware (in this case <a href="https://qmk.fm/">QMK</a>) and can fork the firmware with whatever changes you can code up. This means I get my 60% layout as well as a right Alt key. I can program the exact keyboard layout I want into the firmware as well as arbitrarily complex macros (like the <a href="http://ozfortress.com/showpost.php?p=624355">null-cancelling</a> <a href="https://github.com/chilliams/qmk_firmware/commit/6f7e229d42a9e388aae92163bb3fde39afc2571f">movment script</a> I like to use in Team Fortress 2).
+</p>
 </div>
 <div id="postamble" class="status">
-<p class="date">2018-09-22 Sat 12:00</p>
+<p class="date">2019-01-05 Sat 13:40</p>
 </div>
 </body>
 </html>
