@@ -2,7 +2,6 @@
 <html lang="en-us">
 
 <head>
-	<meta name="generator" content="Hugo 0.55.4" />
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,9 +13,9 @@
 <meta property="og:site_name" content="Christopher Williams" />
 <meta property="og:locale" content="en-us" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chilliams.github.io/" />
-<meta property="og:title" content="Christopher Williams" />
-<meta property="twitter:title" content="Christopher Williams">
+<meta property="og:url" content="https://chilliams.github.io/blog/keyboard-programming/" />
+<meta property="og:title" content="Programming Your Keyboard" />
+<meta property="twitter:title" content="Programming Your Keyboard">
 
     <meta property="twitter:card" content="summary">
 
@@ -26,10 +25,10 @@
 <title>
 
 
-    Christopher Williams
+     Christopher Williams - Programming Your Keyboard 
 
 </title>
-<link rel="canonical" href="https://chilliams.github.io/">
+<link rel="canonical" href="https://chilliams.github.io/blog/keyboard-programming/">
 
 
 <style media="screen">
@@ -975,8 +974,6 @@ margin-left: -4%;
 
 
 
-  <link href="https://chilliams.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Christopher Williams" />
-
 
 </head>
 
@@ -984,7 +981,7 @@ margin-left: -4%;
 <body>
 
 
-<div class="header header-home column">
+<div class="header column">
 
     <div class="container">
         
@@ -1017,43 +1014,79 @@ margin-left: -4%;
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
 
-            
-                <div class="posts">
-                
-                
-                    <div class="page-heading">Latest posts</div>
-                    <ul>
-                    
-                        <li class="groupby">Jan, 2019</li>
-                        
-                            <li class="post-item">
-    <span class="meta">Jan 5, 2019</span>
     
-    <a href="/blog/keyboard-programming/"><span>Programming Your Keyboard</span></a>
+    Programming Your Keyboard
     
-</li>
 
-                        
-                    
-                    </ul>
+</div>
 
-                    
-                
                 </div>
+                <div class="meta">
+                    <div class="date" title="Sat Jan 5 2019 13:40:14 -0400">Jan 5, 2019</div>
+                    
+                        
+                    
+                    
+                    <div class="reading-time middot">3 minute read</div>
+                    
+                    
+                      <div class="tags">
+                    
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+    <p>If you work with enough programmers, eventually you&rsquo;ll work with a fan of mechanical keyboards.</p>
+
+<p>My first mechanical was the <a href="https://deskthority.net/wiki/KBC_Poker_II">Poker II</a>. At the time, I used Vim bindings for programming, in both IDEA and Emacs, and the Poker II is a great keyboard for Vim fans. It features a 60% layout, the backtick key is mapped to escape, and it&rsquo;s programmable. You can reprogram many of the keys and key combinations as well as program simple macros into the keyboard. It&rsquo;s a great keyboard, but if you can read and write C code, I wouldn&rsquo;t recommend because it&rsquo;s not programmable <em>enough</em>.</p>
+
+<p>If you&rsquo;ve used MacOS, you&rsquo;ve probably noticed that all the keybindings that would use the Control key instead use the Command key. I use MacOS at work and a combination of Windows and Linux at home. This switching throws off your muscle memory if you don&rsquo;t think before hitting a key combination. Luckily there&rsquo;s a simple solution: move the Control key on Windows and Linux to where the Command key is on MacOS.</p>
+
+<p>This can be done on Linux with <code>setxkbmap -option altwin:ctrl_alt_win</code> and on Windows with <a href="https://github.com/randyrants/sharpkeys">SharpKeys</a>. In addition to moving the Control key, the Windows key should be used for Alt since Alt is now Control and Control can now be used for Windows. You can now use your thumbs for both Control and Alt not worry about squeezing your pinky onto Control since you never use the Windows key. All the usual keyboard shortcuts use the same hand movements with the only notable exception being Alt-Tab.</p>
+
+<p>What does any of that have to do with programmable keyboards? Well, now that Control is super easy and comfortable to press, the standard Emacs bindings seem much more appealing. I switched to Emacs bindings full-time, but the Poker II does not let your remap the Fn and Pn keys. Since Fn takes up the right Windows key, I don&rsquo;t have something to use for right Alt. So I switched to a tenkeyless keyboard, but was really missing the 60% layout.</p>
+
+<p>Enter the KBParadise V60 Type R. The V60 Type R is a fully programmable keyboard. <strong>Fully programmable</strong> means that you have full access to the firmware, in this case <a href="https://qmk.fm/">QMK</a>, and can fork the firmware with whatever changes you can code up. This means I get my 60% layout as well as a right Alt key. I can program the exact keyboard layout I want into the firmware as well as arbitrarily complex macros, like the <a href="https://github.com/chilliams/qmk_firmware/commit/6f7e229d42a9e388aae92163bb3fde39afc2571f">null-cancelling movement script</a> I like to use in Team Fortress 2.</p>
+
+
+            </div>
+            
+            
             
 
-            <div class="best-posts">
             
             
-            </div>
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

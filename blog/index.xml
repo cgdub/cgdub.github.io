@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Christopher Williams</title>
+    <link>https://chilliams.github.io/blog/</link>
+    <description>Recent content in Blog on Christopher Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Jan 2019 13:40:14 -0400</lastBuildDate>
+    
+	<atom:link href="https://chilliams.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Programming Your Keyboard</title>
+      <link>https://chilliams.github.io/blog/keyboard-programming/</link>
+      <pubDate>Sat, 05 Jan 2019 13:40:14 -0400</pubDate>
+      
+      <guid>https://chilliams.github.io/blog/keyboard-programming/</guid>
+      <description>If you work with enough programmers, eventually you&amp;rsquo;ll work with a fan of mechanical keyboards.
+My first mechanical was the Poker II. At the time, I used Vim bindings for programming, in both IDEA and Emacs, and the Poker II is a great keyboard for Vim fans. It features a 60% layout, the backtick key is mapped to escape, and it&amp;rsquo;s programmable. You can reprogram many of the keys and key combinations as well as program simple macros into the keyboard.</description>
+    </item>
+    
+  </channel>
+</rss>

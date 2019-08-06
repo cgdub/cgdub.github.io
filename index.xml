@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher Williams</title>
+    <link>https://chilliams.github.io/</link>
+    <description>Recent content on Christopher Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Jan 2019 13:40:14 -0400</lastBuildDate>
+    
+	<atom:link href="https://chilliams.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Programming Your Keyboard</title>
+      <link>https://chilliams.github.io/blog/keyboard-programming/</link>
+      <pubDate>Sat, 05 Jan 2019 13:40:14 -0400</pubDate>
+      
+      <guid>https://chilliams.github.io/blog/keyboard-programming/</guid>
+      <description>If you work with enough programmers, eventually you&amp;rsquo;ll work with a fan of mechanical keyboards.
+My first mechanical was the Poker II. At the time, I used Vim bindings for programming, in both IDEA and Emacs, and the Poker II is a great keyboard for Vim fans. It features a 60% layout, the backtick key is mapped to escape, and it&amp;rsquo;s programmable. You can reprogram many of the keys and key combinations as well as program simple macros into the keyboard.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://chilliams.github.io/about/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chilliams.github.io/about/</guid>
+      <description> I am a software developer who lives in New York City.
+Internet Presence  Github  Software I Like  Emacs React Clojure C NixOS Closure Tools PostgreSQL Ion  </description>
+    </item>
+    
+    <item>
+      <title>Voxel Engine</title>
+      <link>https://chilliams.github.io/projects/voxel-engine/</link>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chilliams.github.io/projects/voxel-engine/</guid>
+      <description> I built a Minecraft clone twice.
+WebGL Voxel Engine A browser-based voxel engine made with ClojureScript and WebGL
+ Demo Source  WebGL Voxel Engine Rewrite A browser-based voxel engine that uses ammo.js
+ Demo Source  </description>
+    </item>
+    
+  </channel>
+</rss>
