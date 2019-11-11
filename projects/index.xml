@@ -17,9 +17,8 @@
       <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://chilliams.github.io/projects/voxel-engine/</guid>
-      <description> I built a Minecraft clone twice.
-WebGL Voxel Engine A browser-based voxel engine made with ClojureScript and WebGL
- Demo Source  WebGL Voxel Engine Rewrite A browser-based voxel engine that uses ammo.js
+      <description> I built a Minecraft clone.
+WebGL Voxel Engine A browser-based voxel engine made with ClojureScript, WebGL, and ammo.js
  Demo Source  </description>
     </item>
     
